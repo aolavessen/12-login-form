@@ -1,7 +1,8 @@
 
 export default class LoginForm {
-  constructor() {
-    this.valid = true;
-  }
+  constructor () {
+    this.login = true;
+    this.password = true;
 
-};
+
+}
