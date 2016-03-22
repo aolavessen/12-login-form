@@ -1,2 +1,7 @@
 
-export default undefined;
+export default class LoginForm {
+  constructor() {
+    this.valid = true;
+  }
+
+};
