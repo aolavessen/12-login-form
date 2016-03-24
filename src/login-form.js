@@ -2,6 +2,9 @@
 export default class LoginForm {
   constructor(form, email) {
     this.form = form;
+    this.form.addEventListener(`submit`, (ev) => {
+      ev.preventDefault();
+    });
 
     this.userDirectory = [
       { email: `aaron@theironyard.com`, password: `password123` },
@@ -20,7 +23,6 @@ export default class LoginForm {
 
       return prev;
     }, false);
-
   }
 
   validateInputs() {
