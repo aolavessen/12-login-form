@@ -4,6 +4,7 @@ export default class LoginForm {
     this.form = form;
     this.form.addEventListener(`submit`, (ev) => {
       ev.preventDefault();
+      this.validateInputs();
     });
 
     this.userDirectory = [
