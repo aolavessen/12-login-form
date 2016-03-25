@@ -7,32 +7,38 @@
   </head>
   <body>
 
-  <div class="top-container">
-    <div class="logo">
+    <div class="top-container">
+      <div class="logo">
         <img src="treemo-logo.png" alt="">
       </div>
     </div>
 
-      <div class="bottom-container">
-        <div class="row">
-        <form class="login-form">
-          <input class="login-form__email">
-          <input class="login-form__password">
-          <div class="login-form__validation-message"></div>
-          <button class="save-button">Save</button>
-        </form>
-      </div>
+    <div class="bottom-container">
+
+      <form class="login-form">
+        <p class="login-name">
+          Username
+          <input type="text" class="login-form__email">
+        </p>
+
+        <p class="login-password">
+          Password
+          <input type="text" class="login-form__password">
+        </p>
+        <div class="login-form__validation-message"></div>
+        <button class="save-button">Sign In</button>
+      </form>
     </div>
+  </div>
 
+  <script src="/vendor.js" charset="utf-8"></script>
+  <script src="/app.js" charset="utf-8"></script>
 
-    <script src="/vendor.js" charset="utf-8"></script>
-    <script src="/app.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var form = document.querySelector(`.login-form`);
+    var LoginForm = require(`login-form`);
 
-    <script type="text/javascript">
-      var form = document.querySelector(`.login-form`);
-      var LoginForm = require(`login-form`);
-
-      new LoginForm(form, `youremail@email.com`);
-    </script>
-  </body>
+    new LoginForm(form, `youremail@email.com`);
+  </script>
+</body>
 </html>
