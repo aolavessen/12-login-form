@@ -1,0 +1,35 @@
+
+
+.top-container {
+  margin: auto;
+  width: 100%;
+  // background-color: purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // max-width: 75rem;
+  min-height: 50vh;
+  background-image: url(bg-login-top.png);
+  border: 2px solid #D3D3D3;
+}
+
+.logo {
+  margin: auto;
+  padding-top: 15rem;
+
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  // max-width: 75rem;
+  margin: auto;
+  width: 100%;
+  min-height: 50vh;
+  background-image: url(bg-login.png);
+  border: 2px solid #D3D3D3;
+
+  // background-color: purple;
+}
